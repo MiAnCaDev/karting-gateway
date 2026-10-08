@@ -33,6 +33,8 @@ Ruta: `~/PROYECTOS/karting-gateway`
 
 Los backends (`karts-api-1` y `karting-live-collector-1`) no pasan por el gateway. Solo los frontales se conectan a `proxy-net`.
 
+Las webs son [https://karting.mianca.com.es/](https://karting.mianca.com.es/) y [https://karting-live.mianca.com.es/](https://karting-live.mianca.com.es/)
+
 ## Estructura
 
 ```
