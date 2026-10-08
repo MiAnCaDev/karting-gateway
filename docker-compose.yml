@@ -1,0 +1,16 @@
+services:
+  gateway:
+    image: nginx:alpine
+    container_name: gateway
+    restart: always
+    ports:
+      - "8080:8080"
+      - "8090:8090"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./apagado.html:/usr/share/nginx/html/apagado.html:ro
+    networks: [proxy-net]
+
+networks:
+  proxy-net:
+    external: true
