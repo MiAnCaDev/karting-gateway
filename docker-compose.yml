@@ -1,7 +1,7 @@
 services:
   gateway:
     image: nginx:alpine
-    container_name: gateway
+    container_name: karting-gateway
     restart: always
     ports:
       - "8080:8080"
